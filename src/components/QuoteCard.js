@@ -7,9 +7,10 @@ const QuoteCard = () => {
     const [quote, setQuote] = useState("");
     const [author, setAuthor] = useState("");
 
+
     useEffect(() => {
         getQuote()
-    }, [])
+    }, [])// eslint-disable-line react-hooks/exhaustive-deps
 
     const randomColor = () => {
 
